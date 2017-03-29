@@ -1,4 +1,4 @@
-TARGET	= Sinx
+TARGET	= Hello.x
 
 CC	= gcc
 CFLAGS	= -W -Wall
