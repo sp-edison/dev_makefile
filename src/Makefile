@@ -1,9 +1,9 @@
 TARGET	= Hello.x
 
 CC	= gcc
-CFLAGS	= -W -Wall
+CFLAGS	=
 LINKER 	= gcc
-LFLAGS	= -W -Wall
+LFLAGS	=
 
 BINDIR	= ../bin
 
