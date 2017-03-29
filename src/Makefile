@@ -2,6 +2,7 @@ TARGET	= Hello.x
 
 CC	= gcc
 CFLAGS	= -W -Wall
+LINKER 	= gcc 
 LFLAGS	= -lm -W -Wall -o 
 
 BINDIR	= ../bin
@@ -14,7 +15,7 @@ OBJS := $(SRCS:.c=.o)
 all: $(BINDIR)/$(TARGET)
 
 $(BINDIR)/$(TARGET): $(BINDIR) $(OBJS)
-	$(CC) $(LFLAGS) $@ $(OBJS)
+	$(LINKER) $(LFLAGS) $@ $(OBJS)
 	@echo "Linking complete!"
 
 $(OBJS): %.o : %.c
